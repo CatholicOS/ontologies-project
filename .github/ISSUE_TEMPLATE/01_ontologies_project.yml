@@ -1,0 +1,35 @@
+name: Catholic OS Ontologies
+description: Submit an ontology project.
+title: "[Project]: project_title_here"
+labels: ["ontologies-project"]
+assignees:
+  - JohnRDOrazio
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Ontologies for the Common Digital Patrimony of the Catholic Church — formal models defining entities, relationships, and vocabularies
+        for representing the Liturgy, Scripture, magisterial hierarchy, and foundational sources in a unified semantic framework.
+  - type: textarea
+    id: project-description
+    attributes:
+      label: Project Description
+      description: Please provide a brief description of your ontology definition.
+      render: markdown
+      placeholder: |
+        This ontology defines the hierarchical and relational structure of the sources upon which the Catholic faith is founded and transmitted.
+        It models the interdependence, authority, and contextual use of these sources within the living Tradition of the Church.
+    validations:
+      required: true
+  - type: textarea
+    id: project-team
+    attributes:
+      label: Project Team
+      description: List the team members involved in this project (by github username).
+      render: markdown
+      placeholder: |
+        - @username1
+        - @username2
+        - @username3
+    validations:
+      required: true
